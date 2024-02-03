@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 import TabPanel from './TabPanel';
 import TabLabels from './TabLabels';
+import Main from './pages/Main';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Cv from './pages/Cv';
 
 const tabsData = [
   { label: 'Nela Maruškevič', a11yProps: index => ({ id: `simple-tab-${index}`, 'aria-controls': `simple-tabpanel-${index}` }) },
@@ -22,11 +26,18 @@ function BasicTabs() {
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <TabLabels value={value} onChange={handleChange} tabs={tabsData} />
       </Box>
-      {tabsData.map((tab, index) => (
-        <TabPanel key={index} value={value} index={index}>
-          {tab.label}
-        </TabPanel>
-      ))}
+      <TabPanel value={value} index={0} key={0}>
+       <Main/>
+      </TabPanel>
+      <TabPanel value={value} index={1} key={1}>
+        <About/>
+      </TabPanel>
+      <TabPanel value={value} index={2} key={2}>
+        <Contact/>
+      </TabPanel>
+      <TabPanel value={value} index={3} key={3}>
+        <Cv/>
+      </TabPanel>
     </Box>
   );
 }
