@@ -3,5 +3,25 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #666666;
+}
+
+/* UTILITY */
+
+.w-100 {
+  width: 100%;
+}
+
+.fade-out {
+  animation: fadeOut 4s ease;
+}
+
+/* ANIMATIONS */
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }

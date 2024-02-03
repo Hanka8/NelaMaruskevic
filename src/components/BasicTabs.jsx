@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import TabPanel from './TabPanel';
 import TabLabels from './TabLabels';
 import Main from './pages/Main';
+import Main2 from './pages/Main2';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Cv from './pages/Cv';

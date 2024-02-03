@@ -11,22 +11,34 @@ export default function Main() {
         alignItems={'center'}
         >
           <Grid item>
+            <picture>
               <img src="src\assets\images\1.png" alt="" />
+            </picture>
           </Grid>
           <Grid item>
+            <picture>
               <img src="src\assets\images\2.png" alt="" />
+              </picture>    
           </Grid>
           <Grid item>
+            <picture>
               <img src="src\assets\images\3.png" alt="" />
+            </picture>
           </Grid>
           <Grid item>
+            <picture>
               <img src="src\assets\images\4.png" alt="" />
+            </picture>
           </Grid>
           <Grid item>
+            <picture>
               <img src="src\assets\images\5.png" alt="" />
+            </picture>
           </Grid>
           <Grid item>
+            <picture>
               <img src="src\assets\images\6.png" alt="" />
+            </picture>
           </Grid>
       </Grid>
     </main>
