@@ -26,17 +26,47 @@
   min-height: 100vh;
 }
 
+.rotate {
+  animation: rotate 3s linear infinite;
+}
+
+/* ITEMS */
+
 .img-item {
   cursor: pointer;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.modal-img {
+  max-height: 100vh;
+  max-width: 90vw;
+  object-fit: contain;
 }
 
 .intro-item {
   width: 40%;
 }
 
-.rotate {
-  animation: rotate 3s linear infinite;
+.btn-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  background-color: transparent;
+  background-image: url("./public/close.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 1rem;
+  height: 1rem;
+  z-index: 10;
+  border: .5rem solid transparent;
+  box-sizing: content-box;
+}
+
+.btn-close:hover {
+  rotate: 90deg;
+  transition: 500ms;
 }
 
 /* ANIMATIONS */

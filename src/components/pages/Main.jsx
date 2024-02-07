@@ -46,7 +46,10 @@ export default function Main() {
                 aria-describedby="image magnified"
             >
               <Box sx={style}>
-                <img className='w-100' src={imageSrc} />
+                <button className='btn-close' onClick={handleClose}></button>
+                <picture className='modal-picture'>
+                  <img className='modal-img' src={imageSrc} />
+                </picture>
               </Box>
             </Modal>
           </Grid>
