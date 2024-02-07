@@ -4,14 +4,12 @@ import TabPanel from './TabPanel';
 import TabLabels from './TabLabels';
 import Main from './pages/Main';
 import About from './pages/About';
-import Contact from './pages/Contact';
-import Cv from './pages/Cv';
 
 const tabsData = [
   { label: 'Nela Maruškevič', a11yProps: index => ({ id: `simple-tab-${index}`, 'aria-controls': `simple-tabpanel-${index}` }) },
   { label: 'o umělci', a11yProps: index => ({ id: `simple-tab-${index}`, 'aria-controls': `simple-tabpanel-${index}` }) },
-  { label: 'kontakt', a11yProps: index => ({ id: `simple-tab-${index}`, 'aria-controls': `simple-tabpanel-${index}` }) },
-  { label: 'cv', a11yProps: index => ({ id: `simple-tab-${index}`, 'aria-controls': `simple-tabpanel-${index}` }) },
+  // { label: 'kontakt', a11yProps: index => ({ id: `simple-tab-${index}`, 'aria-controls': `simple-tabpanel-${index}` }) },
+  // { label: 'cv', a11yProps: index => ({ id: `simple-tab-${index}`, 'aria-controls': `simple-tabpanel-${index}` }) },
 ];
 
 function BasicTabs() {
@@ -22,7 +20,9 @@ function BasicTabs() {
   };
 
   return (
-    <Box sx={{ width: '100%' }}>
+    <Box sx={{ 
+      width: '100%'
+       }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <TabLabels value={value} onChange={handleChange} tabs={tabsData} />
       </Box>
@@ -32,12 +32,12 @@ function BasicTabs() {
       <TabPanel value={value} index={1} key={1}>
         <About/>
       </TabPanel>
-      <TabPanel value={value} index={2} key={2}>
+      {/* <TabPanel value={value} index={2} key={2}>
         <Contact/>
       </TabPanel>
       <TabPanel value={value} index={3} key={3}>
         <Cv/>
-      </TabPanel>
+      </TabPanel> */}
     </Box>
   );
 }

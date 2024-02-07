@@ -15,6 +15,15 @@
   padding: 2rem;
 }
 
+.mt-5 {
+  margin-top: 5rem;
+}
+
+.img-item {
+  cursor: pointer;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
 .fade-out {
   animation: fadeOut 4s ease;
 }

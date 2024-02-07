@@ -4,6 +4,7 @@ import Tab from '@mui/material/Tab';
 import { styled } from '@mui/material/styles';
 
 const AntTabs = styled(Tabs)({
+  padding: '10px 0 0 0',
   borderBottom: '10px solid #000000',
   '& .MuiTabs-indicator': {
     backgroundColor: "transparent",
@@ -25,6 +26,10 @@ const AntTab = styled((props) => <Tab disableRipple {...props} />)(({ theme }) =
   '&:hover': {
     color: '#b66857',
     opacity: 1,
+  },
+  fontSize: '1.5rem',
+  [theme.breakpoints.down('sm')]: {
+    fontSize: '1rem',
   },
   '&.Mui-selected': {
     color: '#b66857',
