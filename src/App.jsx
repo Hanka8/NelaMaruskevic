@@ -12,7 +12,7 @@ function App() {
     // Set a timeout to hide the frame after
     const timeoutId = setTimeout(() => {
       setShowFrame(false);
-    }, 2);
+    }, 2000);
 
     // Cleanup the timeout to avoid memory leaks
     return () => clearTimeout(timeoutId);

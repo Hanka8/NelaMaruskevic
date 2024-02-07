@@ -19,22 +19,33 @@
   margin-top: 5rem;
 }
 
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
 .img-item {
   cursor: pointer;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
-.fade-out {
-  animation: fadeOut 4s ease;
+.intro-item {
+  width: 40%;
+}
+
+.rotate {
+  animation: rotate 3s linear infinite;
 }
 
 /* ANIMATIONS */
 
-@keyframes fadeOut {
+@keyframes rotate {
   0% {
-    opacity: 1;
+    rotate: 0deg;
   }
   100% {
-    opacity: 0;
+    rotate: 360deg;
   }
 }
