@@ -46,7 +46,7 @@ export default function Main() {
                 aria-describedby="image magnified"
             >
               <Box sx={style}>
-                <img className='w-100' src={`./${imageSrc}`} />
+                <img className='w-100' src={imageSrc} />
               </Box>
             </Modal>
           </Grid>
