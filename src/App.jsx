@@ -9,10 +9,10 @@ function App() {
   const [showFrame, setShowFrame] = useState(true);
 
   useEffect(() => {
-    // Set a timeout to hide the frame after 3 seconds
+    // Set a timeout to hide the frame after
     const timeoutId = setTimeout(() => {
       setShowFrame(false);
-    }, 2000);
+    }, 2);
 
     // Cleanup the timeout to avoid memory leaks
     return () => clearTimeout(timeoutId);

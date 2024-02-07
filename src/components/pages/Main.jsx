@@ -2,44 +2,26 @@ import React from 'react'
 import Grid from '@mui/material/Grid';
 
 export default function Main() {
+
+  // create an array of numbers from 1 to 24 because we have 24 images with that naming convention
+  const imagesList = Array.from(Array(24).keys(), (i) => i + 1);
+
   return (
     <main>
       <Grid
-        container 
-        spacing={3}
-        justifyContent={'center'}
-        alignItems={'center'}
+        container
+        spacing={20}
+        justifyContent="center"
+        alignItems="center"
+        className="p-2"
         >
-          <Grid item>
+        {imagesList.map((image, index) => (
+          <Grid item key={index} xs={6}>
             <picture>
-              <img src="src\assets\images\1.png" alt="" />
+              <img className='w-100' src={`src/assets/images/works/${image}.webp`} alt="image" />
             </picture>
           </Grid>
-          <Grid item>
-            <picture>
-              <img src="src\assets\images\2.png" alt="" />
-              </picture>    
-          </Grid>
-          <Grid item>
-            <picture>
-              <img src="src\assets\images\3.png" alt="" />
-            </picture>
-          </Grid>
-          <Grid item>
-            <picture>
-              <img src="src\assets\images\4.png" alt="" />
-            </picture>
-          </Grid>
-          <Grid item>
-            <picture>
-              <img src="src\assets\images\5.png" alt="" />
-            </picture>
-          </Grid>
-          <Grid item>
-            <picture>
-              <img src="src\assets\images\6.png" alt="" />
-            </picture>
-          </Grid>
+        ))}
       </Grid>
     </main>
   )
