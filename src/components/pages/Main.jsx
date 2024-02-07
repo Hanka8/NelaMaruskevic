@@ -37,7 +37,7 @@ export default function Main() {
         {imagesList.map((image, index) => (
           <Grid item key={index} xs={10} sm={10} md={5}>
             <picture>
-              <img className='w-100 img-item' src={`src/assets/images/works/${image}.webp`} alt="image" onClick={handleOpen} />
+              <img className='w-100 img-item' src={`./src/assets/images/works/${image}.webp`} alt="image" onClick={handleOpen} />
             </picture>
             <Modal
                 open={open}
@@ -46,7 +46,7 @@ export default function Main() {
                 aria-describedby="image magnified"
             >
               <Box sx={style}>
-                <img className='w-100' src={imageSrc} />
+                <img className='w-100' src={`./${imageSrc}`} />
               </Box>
             </Modal>
           </Grid>
