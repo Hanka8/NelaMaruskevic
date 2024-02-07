@@ -37,7 +37,7 @@ export default function Main() {
         {imagesList.map((image, index) => (
           <Grid item key={index} xs={10} sm={10} md={5}>
             <picture>
-              <img className='w-100 img-item' src={`./public/images/works/${image}.webp`} alt="image" onClick={handleOpen} />
+              <img className='w-100 img-item' src={`./images/works/${image}.webp`} alt="image" onClick={handleOpen} />
             </picture>
             <Modal
                 open={open}
