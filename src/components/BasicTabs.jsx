@@ -32,12 +32,6 @@ function BasicTabs() {
       <TabPanel value={value} index={1} key={1}>
         <About/>
       </TabPanel>
-      {/* <TabPanel value={value} index={2} key={2}>
-        <Contact/>
-      </TabPanel>
-      <TabPanel value={value} index={3} key={3}>
-        <Cv/>
-      </TabPanel> */}
     </Box>
   );
 }

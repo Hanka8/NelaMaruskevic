@@ -4,7 +4,7 @@ import Typography from '@mui/material/Typography';
 
 function TabPanel({ children, value, index, ...other }) {
   return (
-    <div
+    <span
       role="tabpanel"
       hidden={value !== index}
       id={`full-width-tabpanel-${index}`}
@@ -16,7 +16,7 @@ function TabPanel({ children, value, index, ...other }) {
           <Typography>{children}</Typography>
         </Box>
       )}
-    </div>
+    </span>
   );
 }
 

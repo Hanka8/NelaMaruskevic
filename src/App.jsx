@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import BasicTabs from './components/BasicTabs';
 import Intro from './components/Intro';
 import './App.css';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -12,7 +13,7 @@ function App() {
     // Set a timeout to hide the frame after
     const timeoutId = setTimeout(() => {
       setShowFrame(false);
-    }, 2000);
+    }, 2);
 
     // Cleanup the timeout to avoid memory leaks
     return () => clearTimeout(timeoutId);
@@ -24,7 +25,10 @@ function App() {
     );
   } else {
     return (
-      <BasicTabs />
+      <>
+        <BasicTabs />
+        <Footer />
+      </>
     );
   }
 

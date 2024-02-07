@@ -27,7 +27,7 @@ export default function Main() {
   const imagesList = Array.from(Array(24).keys(), (i) => i + 1);
 
   return (
-    <main className='mt-5'>
+    <div className='mt-5'>
       <Grid
         container
         spacing={{ xs: 10, sm: 15, md: 15, lg: 30}}
@@ -55,6 +55,6 @@ export default function Main() {
           </Grid>
         ))}
       </Grid>
-    </main>
+    </div>
   )
 }

@@ -22,7 +22,7 @@ const AntTab = styled((props) => <Tab disableRipple {...props} />)(({ theme }) =
   marginRight: theme.spacing(1),
   color: 'rgba(0, 0, 0, 0.85)',
   fontFamily:
-    'Expletus Sans',
+  'Expletus Sans',
   '&:hover': {
     color: '#b66857',
     opacity: 1,
